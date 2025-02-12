@@ -27,6 +27,11 @@ h1{
     padding: 2rem;
 }
 
+.consejo{
+    margin: 2rem auto;
+    display: block;
+}
+
 footer{
     
     position: absolute;
