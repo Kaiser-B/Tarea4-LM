@@ -27,10 +27,62 @@ h1{
     padding: 2rem;
 }
 
+button, input, select{
+    padding: .8rem;
+    border-radius: 1rem;
+    border: solid 1px gainsboro;
+    font-weight: bold;
+}
+
+button{
+
+    border: none;
+    border-radius: 1rem;
+    margin: .5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .btn-consejo{
+    background-color: rgb(0, 0, 0);
+    color: white;
     margin: 2rem auto;
     display: block;
 }
+
+.btn-eliminar{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    margin: .5rem;
+    font-weight: bold;
+}
+
+.btn-enviar{
+    background-color: rgb(2, 151, 2);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    margin: .5rem;
+    font-weight: bold;
+}
+
+.lista{
+    list-style: none;
+}
+
+li{
+    cursor: pointer;
+}
+
+.tachada{
+
+    text-decoration: line-through;
+    color: red;
+}
+
+
 
 footer{
     
