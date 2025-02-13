@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <title>Tarea 04 Manipulacion de Documentos Web</title>
 </head>
+
 <body>
     <div class="contenedor">
         <h1 class="titulo">Manipulación de Documentos Web</h1>
 
-            <input type="text" placeholder="Introduce la Tarea" id="entrada-tarea">
-            <select name="tareas" id="tareas" class="tareas">
-                <option value="Trabajo">Trabajo</option>
-                <option value="Estudio">Estudio</option>
-                <option value="Personal">Personal</option>
-            </select>
-            <button class="btn-enviar" id="btn-enviar">Añadir Tarea</button>
-            <button class="btn-consejo" id="btn-consejo">Obtener Consejo Motivacional</button>
+        <input type="text" placeholder="Introduce la Tarea" id="entrada-tarea">
+        <select name="tareas" id="tareas" class="tareas">
+            <option value="Trabajo">Trabajo</option>
+            <option value="Estudio">Estudio</option>
+            <option value="Personal">Personal</option>
+        </select>
+        <button class="btn-enviar" id="btn-enviar">Añadir Tarea</button>
+        <button class="btn-consejo" id="btn-consejo">Obtener Consejo Motivacional</button>
 
-            <ul class="lista" id="lista"></ul>
-            <p class="mensaje" id="mensaje"></p>
-        
+        <ul class="lista" id="lista"></ul>
+        <p class="mensaje" id="mensaje"></p>
+
         <footer class="footer">
             <p>
                 Víctor Sánchez Sánchez - EAD 1º DAW - 2025
@@ -31,7 +37,8 @@
             </p>
         </footer>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>

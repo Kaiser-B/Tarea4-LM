@@ -56,17 +56,47 @@ function agregarTarea(){
     
 }
 
-function consejoMotivacional(){
+ function consejoMotivacional(){
+
 
     fetch('https://api.adviceslip.com/advice')
-    .then(respuesta=> respuesta.json())
-    .then(consejo => {
-        mensaje.textContent = consejo.slip.advice;})
-    .catch((error)=>{
-        console.error("Error", error)
-    });
+        .then(respuesta=> respuesta.json())
+        .then(consejo => {
+            btnConsejo.setAttribute('disabled', "true");
+            btnConsejo.classList.add('deshabilitado');
+            setTimeout(() => {
+                btnConsejo.classList.remove('deshabilitado')
+                btnConsejo.removeAttribute('disabled')
+                mensaje.textContent = consejo.slip.advice;
+            }, 1500)
+        })
+        .catch((error)=>{
+            mensaje.classList.add('error-consejo');
+            mensaje.textContent = "No se pudo obtener un consejo, inténtalo de nuevo";
+        });
+ }
 
-}
+/*  Quería probar si recordaba hacerlo con la función asíncrona ya que lo aprendí así,
+    lo hacía así de forma automática pero de no practicar lo había olvidado.
+
+async function consejoMotivacional() {
+    
+     try {
+         const respuesta = await fetch('https://api.adviceslip.com/advice');
+         const consejo = await respuesta.json();
+         btnConsejo.setAttribute('disabled', "true");
+         btnConsejo.classList.add('deshabilitado');
+         setTimeout(() => {
+             btnConsejo.classList.remove('deshabilitado')
+             btnConsejo.removeAttribute('disabled')
+             mensaje.textContent = consejo.slip.advice;
+         }, 1500)
+     } catch (error) {
+        mensaje.classList.add('error-consejo');
+        mensaje.textContent = "No se pudo obtener un consejo, inténtalo de nuevo";
+     }
+
+ }*/
 
 botonAnadir.addEventListener('click', agregarTarea);
 btnConsejo.addEventListener('click', consejoMotivacional);

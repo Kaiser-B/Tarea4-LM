@@ -10,6 +10,7 @@ html{
 }
 
 body{
+    font-family: "Open Sans", serif;
     font-size: 16px;
     text-align: center;
     background-color: rgb(69, 68, 68);
@@ -48,6 +49,12 @@ button{
     color: white;
     margin: 2rem auto;
     display: block;
+}
+
+.deshabilitado{
+
+    cursor: no-drop;
+    background-color: rgb(197 197 197);
 }
 
 .btn-eliminar{
@@ -90,6 +97,10 @@ li{
     font-family: cursive;
     max-width: 90%;
     margin: 4rem auto;
+}
+
+.mensaje.error-consejo{
+    color: red;
 }
 
 .modal{
