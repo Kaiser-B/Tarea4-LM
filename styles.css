@@ -74,6 +74,8 @@ button{
 
 li{
     cursor: pointer;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .tachada{
@@ -82,7 +84,31 @@ li{
     color: red;
 }
 
+.mensaje{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: cursive;
+    max-width: 90%;
+    margin: 4rem auto;
+}
 
+.modal{
+    display: flex;
+    background-color: gray;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: cursive;
+    width: fit-content;
+    margin: 0 auto;
+
+    .textoLoader{
+        margin: 1rem;
+    }
+}
 
 footer{
     
